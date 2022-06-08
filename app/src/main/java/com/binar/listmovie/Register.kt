@@ -55,7 +55,7 @@ fun Register(name: String) {
             mcontext.startActivity(Intent(mcontext, Login::class.java))
 
         }){
-            Text(text = "Register", )
+            Text(text = "Register")
         }
 
     }

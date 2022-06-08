@@ -56,9 +56,9 @@ fun Greeting2(name: String) {
             mcontext.startActivity(Intent(mcontext, Home::class.java))
 
         }){
-            Text(text = "Login", )
+            Text(text = "Login")
         }
-        Row() {
+        Row {
 
             Text(text = "Belum Punya Akun? ")
             val text =  stringResource(R.string.daftar)

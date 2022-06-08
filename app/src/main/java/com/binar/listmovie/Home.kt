@@ -1,5 +1,6 @@
 package com.binar.listmovie
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -33,7 +34,7 @@ class Home : ComponentActivity() {
                     val data = repo.getalldata()
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
                         judul( "Home")
-                        LazyColumn(){
+                        LazyColumn {
                             items(items = data){
                                     movie -> getmovie(movie = movie)
                             }
@@ -45,6 +46,7 @@ class Home : ComponentActivity() {
     }
 }
 
+@SuppressLint("ComposableNaming")
 @Composable
 fun judul(name:String){
     Column(horizontalAlignment = Alignment.CenterHorizontally) {
@@ -52,6 +54,7 @@ fun judul(name:String){
     }
 }
 
+@SuppressLint("ComposableNaming")
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
 fun getmovie(movie: Movie) {
@@ -80,7 +83,7 @@ fun DefaultPreview3() {
         val repo = MovieRepository()
         val data = repo.getalldata()
 
-        LazyColumn(){
+        LazyColumn {
 
             items(items = data){
                     movie -> getmovie(movie = movie)
