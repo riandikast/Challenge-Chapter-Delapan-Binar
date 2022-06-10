@@ -2,8 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.binar.listmovie">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
+        android:usesCleartextTraffic="true"
+        android:name=".di.MovieApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -14,27 +16,27 @@
         android:theme="@style/Theme.ListMovie"
         tools:targetApi="31">
         <activity
-            android:name=".Detail"
+            android:name=".view.Detail"
             android:exported="false"
             android:label="@string/title_activity_detail"
             android:theme="@style/Theme.ListMovie" />
         <activity
-            android:name=".Register"
+            android:name=".view.Register"
             android:exported="false"
             android:label="@string/title_activity_register"
             android:theme="@style/Theme.ListMovie" />
         <activity
-            android:name=".Home"
+            android:name=".view.Home"
             android:exported="false"
             android:label="@string/title_activity_home"
             android:theme="@style/Theme.ListMovie" />
         <activity
-            android:name=".Login"
+            android:name=".view.Login"
             android:exported="false"
             android:label="@string/title_activity_login"
             android:theme="@style/Theme.ListMovie" />
         <activity
-            android:name=".MainActivity"
+            android:name=".view.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.ListMovie">
             <intent-filter>

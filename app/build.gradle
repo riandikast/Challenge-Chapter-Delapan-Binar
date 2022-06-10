@@ -1,6 +1,9 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -66,4 +69,40 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
     //noinspection GradleDependency
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
+    //    library retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+//    library GSON
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+//    library OKHTTP
+    //noinspection GradleDependency
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.3'
+
+    //load gambar online
+    //noinspection GradleDependency,GradleDependency
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+
+    //noinspection GradleDependency
+    //    library ViewModel
+    //noinspection GradleDependency,GradleDependency
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+
+    //    library untuk livedata
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.4.1"
+    // data store
+    //noinspection GradleDependency
+    implementation "androidx.datastore:datastore-preferences:1.0.0-alpha01"
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //noinspection GradleDependency
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.2.0-alpha04'
+
+    implementation("com.google.dagger:hilt-android:2.38.1")
+    //noinspection GradleDependency
+    kapt("com.google.dagger:hilt-android-compiler:2.38.1")
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1"
+
+    // coil
+    implementation("io.coil-kt:coil-compose:2.1.0")
+    //noinspection GradleDependency
+    implementation "androidx.compose.material:material-icons-extended:$compose_version"
+
 }

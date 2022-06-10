@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconExtension">
+        <ignore path="D:/AndroidProject/Challenge-Chapter-8-Binara/app/src/main/res/drawable-nodpi/icon.jpg" />
+        <ignore path="D:/AndroidProject/Challenge-Chapter-8-Binara/app/src/main/res/drawable/icon.jpg" />
+        <ignore path="D:/AndroidProject/Challenge-Chapter-8-Binara/app/src/main/res/drawable/icon.jpg" />
+        <ignore path="D:/AndroidProject/Challenge-Chapter-8-Binara/app/src/main/res/drawable/icon.jpg" />
+    </issue>
+    <issue id="IconLocation">
+        <ignore path="D:/AndroidProject/Challenge-Chapter-8-Binara/app/src/main/res/drawable/b.png" />
+        <ignore path="D:/AndroidProject/Challenge-Chapter-8-Binara/app/src/main/res/drawable/b.png" />
+        <ignore path="D:/AndroidProject/Challenge-Chapter-8-Binara/app/src/main/res/drawable/b.png" />
+        <ignore path="D:/AndroidProject/Challenge-Chapter-8-Binara/app/src/main/res/drawable/icon.jpg" />
+        <ignore path="D:/AndroidProject/Challenge-Chapter-8-Binara/app/src/main/res/drawable/icon.jpg" />
+    </issue>
+</lint>
